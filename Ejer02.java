@@ -1,6 +1,7 @@
+import java.util.Scanner;
+
 public class Ejer02{
 	public static void main(String[] args) {
-
 		/*
 		Resultado:
 		    precioPagar
@@ -9,7 +10,10 @@ public class Ejer02{
 		Proceso:
 			precioPagar= precioSinOfe - precioSinOfe*0.22
 		*/
-		double precioSinOfe=10;
+		Scanner reader = new Scanner(System.in);
+		int precioSinOfe = 0;
+		System.out.print("precioSinOfe:");
+		precioSinOfe = reader.nextInt();
 		double precioPagar= precioSinOfe - precioSinOfe*0.22;
 		System.out.print("precioPagar:"+precioPagar);
 	}
